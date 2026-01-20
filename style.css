@@ -1,40 +1,41 @@
-/* ===== Global ===== */
+/* ================= BASE ================= */
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-image: url("cobblestone.png");
-    background-repeat: repeat;
-    background-size: 128px 128px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
     color: #202122;
 }
 
-/* ===== Main layout ===== */
+/* ================= LAYOUT ================= */
+
 #container {
     display: flex;
     max-width: 1200px;
-    margin: 20px auto;
-    background: transparent;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
-/* ===== Sidebar ===== */
+/* ================= SIDEBAR ================= */
+
 #sidebar {
     width: 220px;
-    background-color: #f8f9fa;
-    border: 1px solid #a2a9b1;
     padding: 10px;
-    margin-right: 20px;
-    height: fit-content;
+    font-size: 14px;
 }
 
 #sidebar h2 {
     font-size: 18px;
-    margin-top: 0;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 4px;
 }
 
 #sidebar ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 #sidebar li {
@@ -42,74 +43,84 @@ body {
 }
 
 #sidebar a {
-    text-decoration: none;
     color: #0645ad;
+    text-decoration: none;
 }
 
 #sidebar a:hover {
     text-decoration: underline;
 }
 
-/* ===== Content ===== */
+/* ================= CONTENT ================= */
+
 #content {
     flex: 1;
     background-color: #ffffff;
     border: 1px solid #a2a9b1;
-    padding: 20px;
+    padding: 20px 24px;
+    margin-left: 20px;
 }
 
-/* ===== Headings ===== */
-#content h1 {
+/* ================= HEADINGS ================= */
+
+h1 {
     font-size: 28px;
+    margin-top: 0;
     border-bottom: 1px solid #a2a9b1;
     padding-bottom: 6px;
 }
 
-#content h2 {
+h2 {
     font-size: 22px;
-    border-bottom: 1px solid #c8ccd1;
-    margin-top: 30px;
+    margin-top: 28px;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 4px;
 }
 
-#content h3 {
+h3 {
     font-size: 18px;
     margin-top: 20px;
 }
 
-/* ===== Text ===== */
-#content p {
+/* ================= TEXT ================= */
+
+p {
     line-height: 1.6;
+    margin: 10px 0;
 }
 
-/* ===== Lists ===== */
-#content ul {
-    padding-left: 20px;
+ul {
+    margin-left: 20px;
 }
 
-/* ===== Images ===== */
-#content img {
-    max-width: 100%;
-    display: block;
-    margin: 15px auto;
-    border: 1px solid #a2a9b1;
-    background-color: #fff;
+/* ================= LINKS ================= */
+
+a {
+    color: #0645ad;
+    text-decoration: none;
 }
 
-/* ===== Wiki note box ===== */
+a:hover {
+    text-decoration: underline;
+}
+
+/* ================= NOTES ================= */
+
 .wiki-note {
     background-color: #f8f9fa;
-    border-left: 4px solid #36c;
+    border: 1px solid #a2a9b1;
     padding: 10px;
     margin: 15px 0;
     font-size: 14px;
 }
 
-/* ===== Tables ===== */
+/* ================= TABLES ================= */
+
 table {
     border-collapse: collapse;
     width: 100%;
-    background-color: #ffffff;
-    margin: 20px 0;
+    margin: 15px 0;
+    font-size: 14px;
 }
 
 th, td {
@@ -119,16 +130,28 @@ th, td {
 }
 
 th {
-    background-color: #f8f9fa;
+    background-color: #eaecf0;
+    font-weight: bold;
 }
 
-/* ===== Footer ===== */
+/* ================= IMAGES ================= */
+
+#content img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border: 1px solid #a2a9b1;
+}
+
+/* ================= FOOTER ================= */
+
 footer {
     max-width: 1200px;
-    margin: 10px auto 30px auto;
-    background-color: #f8f9fa;
-    border: 1px solid #a2a9b1;
-    text-align: center;
+    margin: 20px auto;
     padding: 10px;
-    font-size: 14px;
+    font-size: 13px;
+    color: #54595d;
+    border-top: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    text-align: center;
 }
