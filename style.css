@@ -1,0 +1,134 @@
+/* ===== Global ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("cobblestone.png");
+    background-repeat: repeat;
+    background-size: 128px 128px;
+    color: #202122;
+}
+
+/* ===== Main layout ===== */
+#container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: transparent;
+}
+
+/* ===== Sidebar ===== */
+#sidebar {
+    width: 220px;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+#sidebar h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#sidebar li {
+    margin: 6px 0;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Content ===== */
+#content {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #a2a9b1;
+    padding: 20px;
+}
+
+/* ===== Headings ===== */
+#content h1 {
+    font-size: 28px;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 6px;
+}
+
+#content h2 {
+    font-size: 22px;
+    border-bottom: 1px solid #c8ccd1;
+    margin-top: 30px;
+}
+
+#content h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* ===== Text ===== */
+#content p {
+    line-height: 1.6;
+}
+
+/* ===== Lists ===== */
+#content ul {
+    padding-left: 20px;
+}
+
+/* ===== Images ===== */
+#content img {
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #a2a9b1;
+    background-color: #fff;
+}
+
+/* ===== Wiki note box ===== */
+.wiki-note {
+    background-color: #f8f9fa;
+    border-left: 4px solid #36c;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+/* ===== Tables ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #a2a9b1;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+/* ===== Footer ===== */
+footer {
+    max-width: 1200px;
+    margin: 10px auto 30px auto;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
